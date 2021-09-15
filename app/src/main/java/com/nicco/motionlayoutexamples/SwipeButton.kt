@@ -75,18 +75,20 @@ class SwipeButton @JvmOverloads constructor(
             }
 
             override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
+                findViewById<MotionLayout>(R.id.rootLayout).isInteractionEnabled = false
+
                 if (background.width == backgroundWhite.width) {
                     textviewContinue.setOnClickListener {
                         listener.clicked()
                     }
-                }
 
-                findViewById<ImageView>(R.id.img).setImageDrawable(
-                    ContextCompat.getDrawable(
-                        context,
-                        R.drawable.ic_baseline_done_24
+                    findViewById<ImageView>(R.id.img).setImageDrawable(
+                        ContextCompat.getDrawable(
+                            context,
+                            R.drawable.ic_baseline_done_24
+                        )
                     )
-                )
+                }
             }
 
             override fun onTransitionTrigger(
