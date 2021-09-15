@@ -8,14 +8,14 @@
         motion:duration="1000">
         <OnSwipe
             motion:dragDirection="dragRight"
-            motion:touchAnchorId="@+id/root"
+            motion:touchAnchorId="@+id/background"
             motion:touchAnchorSide="right" />
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
             android:layout_marginStart="20dp"
-            android:id="@+id/root"
+            android:id="@+id/background"
             android:layout_width="64dp"
             android:layout_height="64dp"
             motion:layout_constraintBottom_toBottomOf="parent"
@@ -26,10 +26,10 @@
             android:id="@+id/img"
             android:layout_width="24dp"
             android:layout_height="24dp"
-            motion:layout_constraintBottom_toBottomOf="@id/root"
-            motion:layout_constraintStart_toStartOf="@id/root"
-            motion:layout_constraintEnd_toEndOf="@id/root"
-            motion:layout_constraintTop_toTopOf="@id/root" />
+            motion:layout_constraintBottom_toBottomOf="@id/background"
+            motion:layout_constraintStart_toStartOf="@id/background"
+            motion:layout_constraintEnd_toEndOf="@id/background"
+            motion:layout_constraintTop_toTopOf="@id/background" />
 
         <Constraint
             android:id="@+id/textview_intro"
@@ -46,7 +46,7 @@
 
     <ConstraintSet android:id="@+id/end">
         <Constraint
-            android:id="@+id/root"
+            android:id="@+id/background"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             motion:layout_constraintBottom_toBottomOf="parent"
