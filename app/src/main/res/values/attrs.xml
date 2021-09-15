@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="design_system_swipe_button_component">
+        <attr name="primary_text" format="reference"/>
+        <attr name="secondary_text" format="reference"/>
+    </declare-styleable>
+</resources>

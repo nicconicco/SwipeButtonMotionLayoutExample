@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!-- activity_main.xml -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@color/purple_700"
+    app:layoutDescription="@xml/scene_swipe_img_v3"
+    tools:showPaths="false">
+
+    <com.nicco.motionlayoutexamples.SwipeButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

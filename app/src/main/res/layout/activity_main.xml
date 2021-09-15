@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_main.xml -->
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/motionLayout"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    app:layoutDescription="@xml/scene_swipe_img"
+    tools:showPaths="true">
+
+    <ImageView
+        android:id="@+id/button"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@color/teal_200"
+        android:text="Button" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/drawable/ic_baseline_arrow_forward_ios_24.xml" value="0.3203125" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/layout/activity_demo_component_swipe_button.xml" value="0.14792299898682879" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/layout/activity_main_2.xml" value="0.14792299898682879" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/layout/activity_main_3.xml" value="0.16354166666666667" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/layout/activity_main_4.xml" value="0.1" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/layout/activity_main_5.xml" value="0.2" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/layout/activity_main_6.xml" value="0.10277777777777777" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/layout/activity_main_7.xml" value="0.10277777777777777" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/layout/design_system_swipe_button.xml" value="0.1" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/xml/scene_01.xml" value="0.14792299898682879" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/xml/scene_01_01.xml" value="0.14792299898682879" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/xml/scene_click.xml" value="0.12952898550724637" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/xml/scene_click_swipe.xml" value="0.10869565217391304" />
+        <entry key="..\:/MotionLayoutExamples/app/src/main/res/xml/scene_swipe_img_v2.xml" value="0.14628623188405798" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
