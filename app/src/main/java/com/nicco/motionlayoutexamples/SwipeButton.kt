@@ -53,7 +53,12 @@ class SwipeButton @JvmOverloads constructor(
                 startId: Int,
                 endId: Int
             ) {
-
+                findViewById<ImageView>(R.id.img).setImageDrawable(
+                    ContextCompat.getDrawable(
+                        context,
+                        R.drawable.ic_baseline_arrow_forward_ios_24
+                    )
+                )
             }
 
             override fun onTransitionChange(
@@ -63,12 +68,6 @@ class SwipeButton @JvmOverloads constructor(
                 progress: Float
             ) {
 
-                findViewById<ImageView>(R.id.img).setImageDrawable(
-                    ContextCompat.getDrawable(
-                        context,
-                        R.drawable.ic_baseline_arrow_forward_ios_24
-                    )
-                )
             }
 
             override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
