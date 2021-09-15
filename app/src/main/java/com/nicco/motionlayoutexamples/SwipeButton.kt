@@ -75,8 +75,6 @@ class SwipeButton @JvmOverloads constructor(
             }
 
             override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
-                findViewById<MotionLayout>(R.id.rootLayout).isInteractionEnabled = false
-
                 if (background.width == backgroundWhite.width) {
                     textviewContinue.setOnClickListener {
                         listener.clicked()
@@ -88,6 +86,8 @@ class SwipeButton @JvmOverloads constructor(
                             R.drawable.ic_baseline_done_24
                         )
                     )
+
+                    findViewById<MotionLayout>(R.id.rootLayout).isInteractionEnabled = false
                 }
             }
 
