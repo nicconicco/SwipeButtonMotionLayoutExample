@@ -4,16 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/rootLayout"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:background="@color/purple_700"
+    android:layout_height="56dp"
+    android:layout_margin="16dp"
+    android:background="@color/white"
     app:layoutDescription="@xml/scene_swipe_img_v3"
     tools:showPaths="false">
 
     <View
+        android:background="@drawable/shape_drawable_white"
+        android:id="@+id/background_white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <View
+        android:background="@drawable/shape_drawable_pink"
         android:id="@+id/background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/teal_200" />
+        />
 
     <ImageView
         android:id="@+id/img"

@@ -14,21 +14,23 @@
 
     <ConstraintSet android:id="@+id/start">
         <Constraint
-            android:layout_marginStart="20dp"
             android:id="@+id/background"
-            android:layout_width="64dp"
-            android:layout_height="64dp"
+            android:layout_width="40dp"
+            android:layout_marginStart="8dp"
+            android:layout_height="40dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintTop_toTopOf="parent">
+
+        </Constraint>
 
         <Constraint
             android:id="@+id/img"
-            android:layout_width="24dp"
-            android:layout_height="24dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
             motion:layout_constraintBottom_toBottomOf="@id/background"
-            motion:layout_constraintStart_toStartOf="@id/background"
             motion:layout_constraintEnd_toEndOf="@id/background"
+            motion:layout_constraintStart_toStartOf="@id/background"
             motion:layout_constraintTop_toTopOf="@id/background" />
 
         <Constraint
@@ -51,13 +53,15 @@
             android:layout_height="match_parent"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
-            motion:layout_constraintTop_toTopOf="parent" />
+            motion:layout_constraintTop_toTopOf="parent">
+
+        </Constraint>
 
         <Constraint
             android:id="@+id/img"
-            android:layout_width="24dp"
-            android:layout_marginEnd="20dp"
-            android:layout_height="24dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginEnd="8dp"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintTop_toTopOf="parent" />

@@ -1,6 +1,7 @@
 package com.nicco.motionlayoutexamples
 
 import android.content.Context
+import android.content.res.Resources
 import android.util.AttributeSet
 import android.view.View
 import android.view.Window
@@ -21,6 +22,7 @@ class SwipeButton @JvmOverloads constructor(
     private lateinit var listener: SwipeButtonListener
     private lateinit var textviewContinue: TextView
     private lateinit var background: View
+    private lateinit var backgroundWhite: View
 
     @StringRes
     private var primaryTextResource: Int = 0
@@ -37,6 +39,7 @@ class SwipeButton @JvmOverloads constructor(
     private fun init() {
         textviewContinue = findViewById(R.id.textview_continue)
         background = findViewById(R.id.background)
+        backgroundWhite = findViewById(R.id.background_white)
 
         findViewById<TextView>(R.id.textview_intro).setTextResourceIfNotZero(primaryTextResource)
         findViewById<TextView>(R.id.textview_continue).setTextResourceIfNotZero(
@@ -72,7 +75,7 @@ class SwipeButton @JvmOverloads constructor(
             }
 
             override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
-                if (background.width == context.resources.displayMetrics.widthPixels) {
+                if (background.width == backgroundWhite.width) {
                     textviewContinue.setOnClickListener {
                         listener.clicked()
                     }
@@ -125,3 +128,5 @@ class SwipeButton @JvmOverloads constructor(
 private fun TextView.setTextResourceIfNotZero(@StringRes text: Int) {
     if (text != 0) setText(text)
 }
+val Int.dp: Int
+    get() = (this * Resources.getSystem().displayMetrics.density + 0.5f).toInt()
