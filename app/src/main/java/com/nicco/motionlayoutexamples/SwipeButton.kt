@@ -3,9 +3,11 @@ package com.nicco.motionlayoutexamples
 import android.content.Context
 import android.util.AttributeSet
 import android.view.View
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.StringRes
 import androidx.constraintlayout.motion.widget.MotionLayout
+import androidx.core.content.ContextCompat
 
 class SwipeButton @JvmOverloads constructor(
     context: Context,
@@ -52,6 +54,13 @@ class SwipeButton @JvmOverloads constructor(
                 endId: Int,
                 progress: Float
             ) {
+
+                findViewById<ImageView>(R.id.img).setImageDrawable(
+                    ContextCompat.getDrawable(
+                        context,
+                        R.drawable.ic_baseline_arrow_forward_ios_24
+                    )
+                )
             }
 
             override fun onTransitionCompleted(motionLayout: MotionLayout?, currentId: Int) {
@@ -59,6 +68,13 @@ class SwipeButton @JvmOverloads constructor(
                 findViewById<TextView>(R.id.textview_continue).setOnClickListener {
                     listener.clicked()
                 }
+
+                findViewById<ImageView>(R.id.img).setImageDrawable(
+                    ContextCompat.getDrawable(
+                        context,
+                        R.drawable.ic_baseline_done_24
+                    )
+                )
             }
 
             override fun onTransitionTrigger(
