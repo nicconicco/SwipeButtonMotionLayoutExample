@@ -1,6 +1,6 @@
 # SwipeButtonMotionLayoutExample
 Show how to work with motion layout and create a simple Swipe Button without any library
 
-Here is the final example
+Here is how its look
 
-![](https://imgur.com/8quxFeZ)
+![Imgur Image](https://imgur.com/8quxFeZ.gif)
