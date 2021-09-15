@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MotionLayoutExamples</string>
+    <string name="dont_do_that">Dont do that</string>
+    <string name="you_did">You did</string>
+    <string name="desliza_para_avanzar">Desliza para avanzar</string>
+    <string name="todo_hecho">Todo hecho</string>
 </resources>

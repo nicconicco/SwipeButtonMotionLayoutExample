@@ -22,7 +22,27 @@ class DemoComponentSwipeButton : AppCompatActivity() {
             }
 
             override fun clicked() {
-                Toast.makeText(this@DemoComponentSwipeButton, "ok", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@DemoComponentSwipeButton, "swipeButton", Toast.LENGTH_LONG).show()
+            }
+        })
+
+        findViewById<SwipeButton>(R.id.swipeButton2).setListener(object: SwipeButtonListener {
+            override fun onSwipeCompleted() {
+                swipeCompleted = true
+            }
+
+            override fun clicked() {
+                Toast.makeText(this@DemoComponentSwipeButton, "swipeButton2", Toast.LENGTH_LONG).show()
+            }
+        })
+
+        findViewById<SwipeButton>(R.id.swipeButton3).setListener(object: SwipeButtonListener {
+            override fun onSwipeCompleted() {
+                swipeCompleted = true
+            }
+
+            override fun clicked() {
+                Toast.makeText(this@DemoComponentSwipeButton, "swipeButton3", Toast.LENGTH_LONG).show()
             }
         })
     }

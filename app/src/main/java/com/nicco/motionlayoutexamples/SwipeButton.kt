@@ -75,7 +75,7 @@ class SwipeButton @JvmOverloads constructor(
     private fun initAttrs(attributSet: AttributeSet) {
         val typeArray = context.obtainStyledAttributes(
             attributSet,
-            R.styleable.design_system_swipe_button_component
+            R.styleable.design_system
         )
 
         val size = typeArray.indexCount
@@ -84,9 +84,9 @@ class SwipeButton @JvmOverloads constructor(
             .map { typeArray.getIndex(it) }
             .forEach {
                 when (it) {
-                    R.styleable.design_system_swipe_button_component_primary_text ->
+                    R.styleable.design_system_primary_text ->
                         primaryTextResource = typeArray.getResourceId(it, 0)
-                    R.styleable.design_system_swipe_button_component_secondary_text ->
+                    R.styleable.design_system_secondary_text ->
                         secondaryTextResource = typeArray.getResourceId(it, 0)
                 }
             }
