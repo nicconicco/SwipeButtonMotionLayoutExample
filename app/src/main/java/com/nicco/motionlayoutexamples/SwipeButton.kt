@@ -11,6 +11,8 @@ import androidx.annotation.StringRes
 import androidx.constraintlayout.motion.widget.MotionLayout
 import androidx.core.content.ContextCompat
 import android.util.DisplayMetrics
+import android.util.Log
+import android.view.MotionEvent
 
 
 class SwipeButton @JvmOverloads constructor(
@@ -46,6 +48,22 @@ class SwipeButton @JvmOverloads constructor(
             secondaryTextResource
         )
         initSwipeListener()
+    }
+
+    override fun onInterceptTouchEvent(event: MotionEvent): Boolean {
+        when (event.action) {
+            MotionEvent.ACTION_UP -> {
+                Log.d("SwipeButton", "ACTION_UP")
+            }
+            MotionEvent.ACTION_DOWN -> {
+                Log.d("SwipeButton", "ACTION_DOWN")
+            }
+            MotionEvent.ACTION_CANCEL -> {
+                Log.d("SwipeButton", "ACTION_CANCEL")
+                findViewById<MotionLayout>(R.id.rootLayout).transitionToStart()
+            }
+        }
+        return super.onInterceptHoverEvent(event)
     }
 
     private fun initSwipeListener() {
@@ -129,5 +147,6 @@ class SwipeButton @JvmOverloads constructor(
 private fun TextView.setTextResourceIfNotZero(@StringRes text: Int) {
     if (text != 0) setText(text)
 }
+
 val Int.dp: Int
     get() = (this * Resources.getSystem().displayMetrics.density + 0.5f).toInt()
